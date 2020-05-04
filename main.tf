@@ -1,4 +1,6 @@
 resource "null_resource" "example" {
 }
-resource "null_resource" "example1" {
+resource "local_file" "testfile" {
+    content     = "This is a test folder"
+    filename = "./testfile"
 }
